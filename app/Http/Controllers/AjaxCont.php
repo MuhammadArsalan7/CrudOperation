@@ -10,6 +10,8 @@ class AjaxCont extends Controller
     public function getdata(){
          $cus=customer::all();
       // $cus=customer::orderBy('created_at','asc')->get();
+      // $cus=customer::orderBy('created_at','asc')->get();
+      // $cus=customer::orderBy('created_at','asc')->get();
         return view ('AjaxCrud.Index',compact('cus'));
     }
     public function addCustomer(Request $request){
